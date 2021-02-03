@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <div class="hamburguer">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
@@ -21,7 +21,7 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="./imagens/bg.jpg" alt="">
             </div>
@@ -35,11 +35,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <!-- <li class="menu-item"><a href="#orçamento" class="menu-link">Orçamento</a></li> -->
                 </ul>
             </nav>
             <div class="social-media">
@@ -48,7 +48,7 @@
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </aside>
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>conhecimentos</h1>
             </div>
@@ -115,7 +115,7 @@
             </div>
         </section>
 
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -155,7 +155,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -176,10 +176,25 @@
                     </form>
                     <button class="btn-submit" type="submit">Enviar</button>
                 </div>
-
             </div>
         </section>
-    </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright &copy; 2021 - Emilio Maximiano Burgos</p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-totop">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </main>
 </body>
 
 <script src="script.js "></script>
