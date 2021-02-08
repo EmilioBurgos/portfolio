@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Questrial&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+@media screen and (max-width: 768px) {
+    .sessao-conhecimentos {
+        background-image: url(/imagens/conhecimento\ bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .conhecimentos-img-wrapper img {
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .conhecimento-text p {
+        display: none;
+    }
+    .sessao-projetos {
+        display: contents;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +40,7 @@ html {
 .hamburguer {
     width: 3rem;
     height: 3rem;
+    margin: 2rem 2rem 0 0;
     position: fixed;
     z-index: 110;
     right: 2rem;
@@ -84,8 +105,8 @@ html {
     opacity: 1;
 }
 
-header {
-    width: 100%;
+.header {
+    width: 100vmax;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -93,7 +114,7 @@ header {
 
 .img-wrapper {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     background-color: rgba(77, 77, 77, 0.5);
 }
@@ -184,6 +205,7 @@ header {
     position: absolute;
     top: 50%;
     left: 10%;
+    margin-right: 2rem;
 }
 
 .banner h1 {
@@ -235,6 +257,11 @@ header {
         transform: translateY(0) rotateY(0);
         opacity: 1;
     }
+}
+
+.sessao-conhecimentos {
+    width: 100vmax;
+    min-height: 100vh;
 }
 
 .conhecimentos {
@@ -321,20 +348,25 @@ header {
 }
 
 .sessao-projetos {
-    width: 100%;
-    height: 100vh;
+    width: 100vmax;
+    min-height: 100vh;
+    margin: 2rem;
 }
 
 .projetos {
     display: flex;
+    flex-flow: wrap;
     justify-content: space-evenly;
     padding: 3rem;
 }
 
 .card {
-    width: 15rem;
-    height: 25rem;
+    min-width: 15rem;
+    min-height: 25rem;
+    max-width: 20rem;
+    max-height: 30rem;
     position: relative;
+    margin: .8rem .1rem;
 }
 
 .card-img-wrapper {
@@ -406,7 +438,7 @@ header {
 }
 
 .sessao-contato {
-    width: 100%;
+    width: 100vmax;
     height: 100vh;
     background-color: gray;
     display: flex;
@@ -499,7 +531,7 @@ header {
 }
 
 footer {
-    width: 100%;
+    width: 100vmax;
     height: 7rem;
     background-color: rgb(49, 49, 49);
     display: flex;
@@ -535,8 +567,6 @@ footer {
     bottom: 3rem;
     width: 3rem;
     height: 3rem;
-    background: #b68212;
-    background: -webkit-linear-gradient(to right, #a34100, #d6cc3e);
     background: linear-gradient(to right, #b68212, #d6cc3e);
     display: flex;
     justify-content: center;
@@ -544,4 +574,5 @@ footer {
     color: white;
     border-radius: .3rem;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
+    margin: 0 1.5rem 1.5rem 0;
 }
