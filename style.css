@@ -1,28 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Questrial&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
-@media screen and (max-width: 768px) {
-    .sessao-conhecimentos {
-        background-image: url(/imagens/conhecimento\ bg.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .conhecimentos-img-wrapper img {
-        opacity: 0%;
-    }
-}
-
 @media screen and (max-width: 375px) {
     .conhecimento-text p {
         display: none;
     }
-    .sessao-projetos {
-        display: contents;
-    }
 }
 
 * {
-    margin: 0;
-    padding: 0;
     list-style: none;
     text-decoration: none;
 }
@@ -35,6 +19,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+.container {
+    width: 100vmax;
 }
 
 .hamburguer {
@@ -53,7 +41,7 @@ html {
 }
 
 .show-menu .hamburguer {
-    right: 16rem;
+    right: 13rem;
 }
 
 .line {
@@ -106,7 +94,7 @@ html {
 }
 
 .header {
-    width: 100vmax;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -155,8 +143,7 @@ html {
 .menu {
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 15%;
 }
 
 .menu-item {
@@ -205,7 +192,7 @@ html {
     position: absolute;
     top: 50%;
     left: 10%;
-    margin-right: 2rem;
+    margin-right: 16rem;
 }
 
 .banner h1 {
@@ -233,8 +220,6 @@ html {
     font-family: var(--font-secundary);
     color: #ffffff;
     font-size: 1rem;
-    background: #b68212;
-    background: -webkit-linear-gradient(to right, #a34100, #d6cc3e);
     background: linear-gradient(to right, #b68212, #d6cc3e);
     padding: 1rem 3rem;
     border: none;
@@ -260,8 +245,11 @@ html {
 }
 
 .sessao-conhecimentos {
-    width: 100vmax;
+    width: 100%;
     min-height: 100vh;
+    background-image: url(imagens/conhecimento\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .conhecimentos {
@@ -348,7 +336,7 @@ html {
 }
 
 .sessao-projetos {
-    width: 100vmax;
+    width: 100%;
     min-height: 100vh;
     margin: 2rem;
 }
@@ -438,7 +426,7 @@ html {
 }
 
 .sessao-contato {
-    width: 100vmax;
+    width: 100%;
     height: 100vh;
     background-color: gray;
     display: flex;
@@ -531,7 +519,7 @@ html {
 }
 
 footer {
-    width: 100vmax;
+    width: 100%;
     height: 7rem;
     background-color: rgb(49, 49, 49);
     display: flex;
