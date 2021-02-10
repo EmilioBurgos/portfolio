@@ -7,6 +7,8 @@
 }
 
 * {
+    margin: 0%;
+    padding: 0%;
     list-style: none;
     text-decoration: none;
 }
@@ -102,7 +104,7 @@ html {
 
 .img-wrapper {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background-color: rgba(77, 77, 77, 0.5);
 }
@@ -126,11 +128,11 @@ html {
 
 .sidebar {
     width: 20rem;
-    height: 100vh;
+    height: 80%;
     background-color: white;
     position: fixed;
     top: 0;
-    right: -20rem;
+    right: -21rem;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
     transition: all .5s;
     z-index: 100;
@@ -159,7 +161,6 @@ html {
 
 .menu-link:hover {
     color: #d6cc3e;
-    font-size: 2.1rem;
     transition: color 1s;
 }
 
@@ -192,7 +193,7 @@ html {
     position: absolute;
     top: 50%;
     left: 10%;
-    margin-right: 16rem;
+    margin-right: 13rem;
 }
 
 .banner h1 {
@@ -338,23 +339,22 @@ html {
 .sessao-projetos {
     width: 100%;
     min-height: 100vh;
-    margin: 2rem;
 }
 
 .projetos {
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
-    padding: 3rem;
+    padding: 4rem;
 }
 
 .card {
     min-width: 15rem;
     min-height: 25rem;
-    max-width: 20rem;
-    max-height: 30rem;
+    max-width: 25rem;
+    max-height: 45rem;
     position: relative;
-    margin: .8rem .1rem;
+    margin: 1rem .2rem;
 }
 
 .card-img-wrapper {
@@ -549,7 +549,7 @@ footer {
     display: flex;
 }
 
-#link-totop {
+.totop {
     position: fixed;
     right: 3rem;
     bottom: 3rem;
