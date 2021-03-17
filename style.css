@@ -23,10 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
-    width: 100vmax;
-}
-
 .hamburguer {
     width: 3rem;
     height: 3rem;
@@ -228,6 +224,7 @@ html {
     cursor: pointer;
     opacity: 0;
     animation: movebanner 1s 1s forwards;
+    display: none;
 }
 
 .banner button:hover {
@@ -563,4 +560,39 @@ footer {
     border-radius: .3rem;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
     margin: 0 1.5rem 1.5rem 0;
+}
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: block;
+    top: -100%;
+    left: 0;
+    transition: 350ms;
+    z-index: 130;
+}
+
+.modal {
+    width: 60%;
+    height: 70%;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 3rem auto 0 auto;
+}
+
+.modal span {
+    float: right;
+    font-size: 3rem;
+    color: #000;
+    margin: 1rem 2rem;
+    transition: 350ms;
+    cursor: pointer;
+
+}
+
+.modal span:hover {
+    color:#b68212;
+    transition: 400ms;
 }
