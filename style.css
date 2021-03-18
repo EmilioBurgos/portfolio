@@ -584,6 +584,7 @@ footer {
     border: 1px solid #000;
     border-radius: 5px;
     margin: 2rem auto 0 auto;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
 }
 
@@ -595,7 +596,6 @@ footer {
     right: 2rem;
     transition: 350ms;
     cursor: pointer;
-
 }
 
 .modal span:hover {
@@ -603,9 +603,37 @@ footer {
     transition: 300ms;
 }
 
-.modelos img {
+.anterior {
+    position: absolute;
+    margin-top: 21rem;
+    width: 55px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #b68212;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 110px;
+    cursor: pointer;
+}
+
+.proximo {
+    position: absolute;
+    margin-top: 21rem;
+    right: 0;
+    width: 55px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color:#b68212;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 110px;
+    cursor: pointer;
+}
+
+#modelos {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    object-fit: cover;
+    transition:1s;
+    background-size: cover;
 }
+

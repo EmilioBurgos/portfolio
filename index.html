@@ -10,6 +10,7 @@
     <link rel="manifest" href="imagens/site.webmanifest">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js "></script>
     <title>Portfolio</title>
 </head>
 
@@ -160,10 +161,11 @@
             <div class="bg-modal" id="modal">
                 <div class="modal">
                     <span class="close" onclick="FecharModal()">&times;</span>
-                    <div class="modelos">
-                        <img src="imagens/art1.jpg" alt="">
-                    </div>
+                    <div class="anterior" onclick="anterior()"><</div>
+                    <div class="proximo" onclick="proximo()">></div>
+                    <div id="modelos"></div>
                 </div>
+                <ul id="botoes"></ul>
             </div>
         </section>
         <section class="sessao-contato" id="contato">
@@ -212,4 +214,4 @@
 </body>
 
 </html>
-<script src="script.js "></script>
+<script type="text/javascript" src="script.js "></script>
