@@ -22,7 +22,6 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 header {
@@ -33,9 +32,8 @@ header {
 }
 
 .hamburguer {
-    width: 3rem;
-    height: 3rem;
-    margin: 2rem 2rem 0 0;
+    width: 2rem;
+    height: 2rem;
     position: fixed;
     z-index: 110;
     right: 2rem;
@@ -48,7 +46,7 @@ header {
 }
 
 .show-menu .hamburguer {
-    right: 13rem;
+    right: 16rem;
 }
 
 .line {
@@ -133,7 +131,7 @@ header {
     top: 0;
     right: -21rem;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
-    transition: all .5s;
+    transition: 0.5s;
     z-index: 100;
 }
 
@@ -191,10 +189,9 @@ header {
 
 .banner {
     position: absolute;
-    top: 60%;
-    left: 10%;
+    left: 8%;
     margin-right: 13rem;
-    bottom: 2rem;
+    bottom: 1rem;
 }
 
 .banner h1 {
@@ -303,8 +300,6 @@ header {
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #b68212;
-    border-bottom: solid 3px #d6cc3e;
-    margin-bottom: 1.5rem;
     margin-top: 3rem;
 }
 
@@ -558,10 +553,10 @@ footer {
 
 .totop {
     position: fixed;
-    right: 3rem;
-    bottom: 3rem;
-    width: 3rem;
-    height: 3rem;
+    right: 0.4rem;
+    bottom: 2rem;
+    width: 2rem;
+    height: 2rem;
     background: linear-gradient(to right, #b68212, #d6cc3e);
     display: flex;
     justify-content: center;
