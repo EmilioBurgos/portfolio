@@ -46,7 +46,7 @@ header {
 }
 
 .show-menu .hamburguer {
-    right: 16rem;
+    right: 14rem;
 }
 
 .line {
@@ -123,7 +123,7 @@ header {
 }
 
 .sidebar {
-    width: 20rem;
+    width: 18rem;
     height: 80%;
     background-color: white;
     position: fixed;
@@ -568,6 +568,8 @@ footer {
     margin: 0 1.5rem 1.5rem 0;
 }
 .bg-modal {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -576,6 +578,34 @@ footer {
     left: 0;
     transition: 350ms;
     z-index: 200;
+}
+
+.anterior {
+    position: fixed;
+    margin-top: 21rem;
+    left: 0;
+    width: 55px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #b68212;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 110px;
+    cursor: pointer;
+}
+
+.proximo {
+    position: fixed;
+    margin-top: 21rem;
+    right: 0;
+    width: 55px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color:#b68212;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 110px;
+    cursor: pointer;
 }
 
 .modal {
@@ -603,33 +633,6 @@ footer {
 .modal span:hover {
     color:#b68212;
     transition: 300ms;
-}
-
-.anterior {
-    position: absolute;
-    margin-top: 21rem;
-    width: 55px;
-    height: 110px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #b68212;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 110px;
-    cursor: pointer;
-}
-
-.proximo {
-    position: absolute;
-    margin-top: 21rem;
-    right: 0;
-    width: 55px;
-    height: 110px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color:#b68212;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 110px;
-    cursor: pointer;
 }
 
 #modelos {
