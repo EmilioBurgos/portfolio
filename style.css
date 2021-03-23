@@ -425,6 +425,14 @@ header {
     opacity: 1;
     visibility: visible;
 }
+.box {
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem .1rem;
+    border-radius: .4rem;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
+}
 
 .sessao-contato {
     width: 100%;
@@ -450,6 +458,8 @@ header {
 }
 
 .contato-right {
+    display: flex;
+    flex-flow: wrap;
     width: 80%;
     background-color: white;
     padding: 3rem 2rem;
@@ -554,6 +564,7 @@ footer {
 
 .totop {
     position: fixed;
+    margin-top: 600px;
     right: 0.4rem;
     bottom: 2rem;
     width: 2rem;
@@ -587,7 +598,7 @@ footer {
     width: 55px;
     height: 110px;
     background-color: rgba(0, 0, 0, 0.2);
-    color: #b68212;
+    color: #ffffff;
     font-size: 2rem;
     text-align: center;
     line-height: 110px;
@@ -601,7 +612,7 @@ footer {
     width: 55px;
     height: 110px;
     background-color: rgba(0, 0, 0, 0.2);
-    color:#b68212;
+    color:#ffffff;
     font-size: 2rem;
     text-align: center;
     line-height: 110px;
@@ -612,9 +623,10 @@ footer {
     position: relative;
     width: 70%;
     height: 80%;
+    max-width: 768px;
     background-color: #fff;
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 2rem auto 0 auto;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
@@ -623,7 +635,7 @@ footer {
 .modal span {
     position: absolute;
     font-size: 3rem;
-    color: #000;
+    color: #fff;
     top: 1rem;
     right: 2rem;
     transition: 350ms;
@@ -631,7 +643,7 @@ footer {
 }
 
 .modal span:hover {
-    color:#b68212;
+    color:#d6cc3e;
     transition: 300ms;
 }
 

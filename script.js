@@ -14,7 +14,7 @@ window.load = slide(1);
 var bgNumber = 1;
 
 function slide(n) {
-    var allBgs = 9;
+    var allBgs = 13;
     document.getElementById("modelos").style.backgroundImage = "url('imagens/"+n+".jpg')";
 }
 
@@ -25,7 +25,7 @@ function anterior() {
     }
 }
 function proximo() {
-    if(bgNumber<9){
+    if(bgNumber<13){
         bgNumber++;
         slide(bgNumber);
     }
