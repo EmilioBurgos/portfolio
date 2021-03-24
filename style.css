@@ -564,7 +564,7 @@ footer {
 
 .totop {
     position: fixed;
-    margin-top: 600px;
+    margin-top: -600px;
     right: 0.4rem;
     bottom: 2rem;
     width: 2rem;
@@ -592,30 +592,28 @@ footer {
 }
 
 .anterior {
-    position: fixed;
-    margin-top: 21rem;
-    left: 0;
-    width: 55px;
-    height: 110px;
+    position: absolute;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     color: #ffffff;
     font-size: 2rem;
     text-align: center;
-    line-height: 110px;
     cursor: pointer;
 }
 
 .proximo {
-    position: fixed;
-    margin-top: 21rem;
-    right: 0;
-    width: 55px;
-    height: 110px;
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     color:#ffffff;
     font-size: 2rem;
     text-align: center;
-    line-height: 110px;
     cursor: pointer;
 }
 
