@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
 @media screen and (max-width: 675px) {
     .conhecimento-text p {
-        display: none;      
+        display: none;
     }
     .sessao-conhecimentos {
         display: none;
@@ -25,10 +25,10 @@ html {
 }
 
 header {
-  width: 100%;  
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .hamburguer {
@@ -425,13 +425,28 @@ header {
     opacity: 1;
     visibility: visible;
 }
+
 .box {
     position: relative;
-    width: 9rem;
-    height: 9rem;
+    width: 10rem;
+    height: 6rem;
+    padding: 1rem;
     margin: 1rem .1rem;
     border-radius: .4rem;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+.box :hover {
+    size: 11%;
+}
+
+.box_contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    color: grey;
 }
 
 .sessao-contato {
@@ -439,9 +454,23 @@ header {
     height: 100vh;
     background-color: gray;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contato-header {
+    display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+}
+
+.contato-header h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: #b68212;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 .contato-wrapper {
@@ -578,6 +607,7 @@ footer {
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
     margin: 0 1.5rem 1.5rem 0;
 }
+
 .bg-modal {
     display: flex;
     align-items: center;
@@ -611,7 +641,7 @@ footer {
     height: 40px;
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    color:#ffffff;
+    color: #ffffff;
     font-size: 2rem;
     text-align: center;
     cursor: pointer;
@@ -641,14 +671,13 @@ footer {
 }
 
 .modal span:hover {
-    color:#d6cc3e;
+    color: #d6cc3e;
     transition: 300ms;
 }
 
 #modelos {
     width: 100%;
     height: 100%;
-    transition:1s;
+    transition: 1s;
     background-size: cover;
 }
-
