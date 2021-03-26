@@ -468,7 +468,7 @@ header {
 .contato-header h1 {
     font-family: var(--font-primary);
     font-size: 3rem;
-    color: #b68212;
+    color: grey;
     margin-top: 3rem;
     padding-bottom: 2rem;
 }
@@ -651,7 +651,8 @@ footer {
     position: relative;
     width: 70%;
     height: 80%;
-    max-width: 668px;
+    max-width: 600px;
+    max-height: 764px;
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 10px;
@@ -703,6 +704,8 @@ footer {
 #modelos {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    object-position: center center;
     transition: 1s;
     background-size: cover;
 }
