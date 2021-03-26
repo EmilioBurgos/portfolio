@@ -7,6 +7,9 @@
     .sessao-conhecimentos {
         display: none;
     }
+    .footer-content p {
+        font-size: 2rem;
+    }
 }
 
 * {
@@ -578,7 +581,7 @@ footer {
 .footer-content p {
     font-family: var(--font-secundary);
     color: white;
-    font-size: 1rem;
+    font-size: .7rem;
 }
 
 .social-list a {
@@ -649,10 +652,10 @@ footer {
 
 .modal {
     position: relative;
-    width: 70%;
-    height: 80%;
-    max-width: 600px;
-    max-height: 764px;
+    width: 90%;
+    height: 60%;
+    max-width: 764px;
+    max-height: 674px;
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 10px;
