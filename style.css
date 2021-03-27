@@ -1,17 +1,29 @@
         @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Questrial&display=swap');
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
-        @media screen and (max-width: 675px) {
+        @media screen and (max-width: 768px) {
             .conhecimentos {
                 display: block;
                 margin: 3rem;
             }
+            .modal {
+                width: 95%;
+                height: 100%;
+                max-width: 800px;
+                max-height: 280px;
+            }
         }
         
-        @media screen and (min-width: 676px) {
+        @media screen and (min-width: 769px) {
             .conhecimentos {
                 display: grid;
                 align-items: center;
                 justify-items: center;
+            }
+            .modal {
+                width: 95%;
+                height: 100%;
+                max-width: 1200px;
+                max-height: 674px;
             }
         }
         
@@ -671,10 +683,6 @@
         
         .modal {
             position: relative;
-            width: 95%;
-            height: 100%;
-            max-width: 1200px;
-            max-height: 674px;
             background-color: #fff;
             border-radius: 10px;
             margin: 2rem auto 0 auto;
