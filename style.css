@@ -581,7 +581,7 @@ footer {
 .footer-content p {
     font-family: var(--font-secundary);
     color: white;
-    font-size: .7rem;
+    font-size: 1rem;
 }
 
 .social-list a {
@@ -635,6 +635,7 @@ footer {
     font-size: 2rem;
     text-align: center;
     cursor: pointer;
+    z-index: 250;
 }
 
 .proximo {
@@ -648,60 +649,34 @@ footer {
     font-size: 2rem;
     text-align: center;
     cursor: pointer;
+    z-index: 250;
+}
+
+.bg-modal span {
+    position: absolute;
+    font-size: 3rem;
+    top: 65px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 250;
+}
+
+.bg-modal span:hover {
+    color: #d6cc3e;
+    transition: 300ms;
 }
 
 .modal {
     position: relative;
     width: 90%;
-    height: 60%;
-    max-width: 764px;
-    max-height: 674px;
+    height: 75%;
+    max-width: 954px;
+    max-height: 784px;
     background-color: #fff;
-    border: 1px solid #000;
     border-radius: 10px;
     margin: 2rem auto 0 auto;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
-}
-
-.modal2 {
-    position: relative;
-    width: 70%;
-    height: 80%;
-    max-width: 668px;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 10px;
-    margin: 2rem auto 0 auto;
-    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
-    background-image: url(imagens/15.jpg);
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.modal2 span {
-    position: absolute;
-    font-size: 3rem;
-    color: #fff;
-    top: 1rem;
-    right: 2rem;
-    transition: 350ms;
-    cursor: pointer;
-}
-
-.modal span {
-    position: absolute;
-    font-size: 3rem;
-    color: #fff;
-    top: 1rem;
-    right: 2rem;
-    transition: 350ms;
-    cursor: pointer;
-}
-
-.modal span:hover {
-    color: #d6cc3e;
-    transition: 300ms;
 }
 
 #modelos {
