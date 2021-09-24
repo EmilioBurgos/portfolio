@@ -1,6 +1,8 @@
 # portfolio
 
 meu portfolio teste
+reunião de alguns trabalhos
+e contatos
 
 ## inicios dos trabalhos
 
